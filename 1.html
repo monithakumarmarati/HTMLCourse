@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main()
+{
+    FILE *fp;
+    
+    fp = fopen("data.txt", "w");
+    
+    fprintf(fp, "Hello Monitha");
+    
+    fclose(fp);
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+    FILE *fp;
+    
+    char name[20];
+    
+    printf("Enter your name : ");
+    scanf("%s", name);
+    
+    fp = fopen("names.txt", "w");
+    
+    fprintf(fp, "%s", name);
+    
+    fclose(fp);
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    FILE *fp; //I AM IMPORTING THIS FILE LIBRARY
+
+    fp = fopen("students.txt", "w"); // I AM CREATING A FILE (students.txt), we are writing to file
+
+    if (fp == NULL) {
+        printf("Error opening file\n");
+        return 1;
+    }
+
+    fprintf(fp, "Monitha Marati\n");
+    fprintf(fp, "Kumar Marati\n");
+
+    fclose(fp);
+
+    return 0;
+}
