@@ -1,4 +1,11 @@
 
+import { BsBell } from "react-icons/bs";
+import { BsGrid3X3Gap } from "react-icons/bs";
+import { BiMoviePlay } from "react-icons/bi";
+import { HiOutlineArrowPathRoundedSquare } from "react-icons/hi2";
+import { BsPersonSquare } from "react-icons/bs";
+
+
     function App() {
 
   const samathapage = {
@@ -63,8 +70,7 @@
 
 
   </h2>
-   
-   <p className="text-xl cursor-pointer">🔔</p>
+   <BsBell />
   <p className="text-xl cursor-pointer">⋮</p>
 </div>
 
@@ -117,7 +123,7 @@
        
           {/* FOLLOWED BY */}
           <p className="text-sm mt-2 mb-2">
-            Followed by <span className="font-semibold">moniii._.11</span>{" "}
+            Followed by <span className="font-semibold">monitha_kumar</span>{" "}
             and <span className="font-semibold">sowmya_reddy</span>
           </p>
       
@@ -125,14 +131,15 @@
 
         {/* Buttons */}
         <div className="flex gap-2 mb-6">
-          <button className="bg-gray-700 px-12 py-1 rounded-md font-semibold flex-1 cursor-pointer">
+          <button className="bg-gray-700 px-10 py-1 rounded-md font-semibold flex-1 cursor-pointer">
             Following 
           </button>
-          <button className="bg-gray-700 px-12 py-1 rounded-md flex-1 cursor-pointer">
+          <button className="bg-gray-700 px-10 py-1 rounded-md flex-1 cursor-pointer">
             Message
           </button>
           
-          <button className="bg-gray-800 px-7 py-1 rounded-md flex-1 cursor-pointer">
+          <button className="bg-gray-700 px-5 py-1 rounded-md flex-1 cursor-pointer">
+            
           </button>
         </div>
         {/* Highlights */}
@@ -157,15 +164,12 @@
 
         </div>
         {/* icons */}
-        <div className="flex justify-around  border-gray-700 py-3">
-          <span><img src="https://www.svgrepo.com/show/497149/grid-1.svg" className="w-5 h-5"></img></span>
-          <span><img src="https://www.svgrepo.com/show/530376/movie.svg" className="w-8 h-6"></img></span>
-          <span>
-            🔁
-          </span>
-          <span>
-            👤
-          </span>
+        <div className="flex justify-around  border-gray-700 py-2 w-90 h-10 gap-4 text-2xl">
+           <BsGrid3X3Gap />
+          <BiMoviePlay />
+          <HiOutlineArrowPathRoundedSquare />
+          <BsPersonSquare />
+
 
         </div>
 
@@ -176,11 +180,6 @@
           ))}
         </div>
 
-        
-  
-
-
-        
 
       </div>
     </div>
